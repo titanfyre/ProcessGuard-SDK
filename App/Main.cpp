@@ -34,7 +34,7 @@ void Launch(){
  CloseHandle(info.hThread);CloseHandle(info.hProcess);note=L"Test program launched directly by this application. Close it normally when finished.";
 }
 void Paint(HDC dc){RECT r{};GetClientRect(mainWindow,&r);FillRect(dc,&r,paper);RECT header{0,0,r.right,82};HBRUSH dark=CreateSolidBrush(Ink);FillRect(dc,&header,dark);DeleteObject(dark);
- Text(dc,24,15,L"ProcessGuard SDK",RGB(255,255,255),title);Text(dc,25,49,preview?L"OFFLINE PREVIEW / synthetic records / no driver access":L"SUBProcessGuard SDK",RGB(195,210,232));
+ Text(dc,24,15,L"ProcessGuard SDK",RGB(255,255,255),title);Text(dc,25,49,preview?L"OFFLINE PREVIEW / synthetic records / no driver access":L"Kernel launch policy / direct children of this application",RGB(195,210,232));
  int width=(r.right-72)/3;
  const std::array<std::wstring,3> labels{L"Events observed",L"Operations denied",L"Dropped log records"};const std::array<PG_U64,3> values{stats.Produced,stats.Denied,stats.Dropped};
  for(int i=0;i<3;++i){int x=24+i*(width+12);Card(dc,{x,98,x+width,180});Text(dc,x+16,110,labels[i],Muted);Text(dc,x+16,135,std::to_wstring(values[i]),Blue,title);}

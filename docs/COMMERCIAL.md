@@ -10,6 +10,6 @@ This project is intended for software vendors who need a small native Windows po
 | OEM integration | Qualified signed binary redistribution rights for one agreed product and supported Windows matrix | From EUR 2,500/year, by contract |
 | Deployment/support | Rollout review, regression qualification, update planning and prioritized integration help | Quoted by fleet size and scope |
 
-These are launch proposals, not an active checkout or a promise of revenue. Signing, full qualification and a commercial agreement are prerequisites to production driver delivery. The preview has no artificial kernel timer, online activation or implemented quota enforcement. Public app/SDK/installer source remains MIT; private driver redistribution needs its own license.
+These are launch proposals, not an active checkout or a promise of revenue. The evaluation driver is Microsoft-signed. Deployment qualification and a commercial agreement are prerequisites to production delivery. The evaluation build has no artificial kernel timer, online activation or implemented quota enforcement. Public app/SDK/installer source remains MIT; private driver redistribution needs its own license.
 
 Contact **titancsa on Discord** with your application, target Windows versions, fleet size and the exact operations you need to control. Start with a small reproducible pilot before buying a wider rollout. Do not use these engineering previews as your only anti-malware, backup, encryption or endpoint policy control.

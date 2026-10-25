@@ -2,7 +2,7 @@
 
 Observe and deny selected executable launches initiated by your own native application, with a two-file C++ SDK and a readable decision log.
 
-**Engineering preview:** driver signing and production qualification are pending. The public download currently contains the application and SDK; the kernel implementation stays private.
+**Microsoft-signed evaluation bundle:** application, two-file SDK, example and self-contained UI/console installers. The kernel implementation stays private. See [validation](docs/VALIDATION.md) for the exercised platforms and remaining production qualification.
 
 ![ProcessGuard SDK interface, explicitly synthetic preview](docs/app.png)
 
@@ -23,8 +23,8 @@ This is a scoped process launch component, not a full endpoint protection produc
 Download the complete Windows x64 ZIP from [Releases](https://github.com/titanfyre/ProcessGuard-SDK/releases). Extract the archive before starting the application.
 
 1. Run **ProcessGuardApp.exe --preview** to explore the interface with explicitly synthetic records. This needs no driver and changes no Windows policy.
-2. Live mode requires the separately qualified Microsoft-signed driver package. **Microsoft signing is still pending; test signatures used in an isolated lab are not production signatures.** The preview ZIP deliberately contains no unsigned driver or nonfunctional setup executable.
-3. Once a signed package is available, its single-file **ProcessGuardSetup.exe** installs the exact embedded driver. Accept elevation and restart only when setup requests it. **ProcessGuardSetupConsole.exe /install** and **/uninstall** provide the same operations.
+2. Live mode uses the Microsoft-signed evaluation driver embedded in both setup executables. The optional offline tour above requires no driver.
+3. Run **ProcessGuardSetup.exe** to install the exact embedded driver. Accept elevation and restart only when setup requests it. **ProcessGuardSetupConsole.exe /install** and **/uninstall** provide the same operations.
 4. Open **ProcessGuardApp.exe** as administrator for live operation, add an **Audit** rule, then select **Start session**. Change to **Deny** only after verifying the observed scope. Stop or close the app to remove the policy.
 
 Windows 10 version 2004+ / Windows 11 x64 are the build targets. See [validation and deployment](docs/VALIDATION.md) for the platforms actually exercised. A Microsoft signature alone is not proof of correctness, compatibility or Microsoft endorsement.
@@ -73,9 +73,9 @@ docs/       Usage boundaries, validation and commercial integration
 
 ## Commercial integration
 
-Public application, SDK and installer source are MIT-licensed. The separately delivered kernel implementation is private and is not covered by that source license. This engineering preview does not implement a trial timer, remote activation or an enforceable licensing quota.
+Public application, SDK and installer source are MIT-licensed. The kernel implementation is private and is not covered by that source license. The download includes separate `BINARY-LICENSE.txt` evaluation terms. This evaluation build does not implement a trial timer, remote activation or an enforceable licensing quota.
 
-For a scoped integration pilot, OEM redistribution rights, deployment qualification or maintenance, contact **`titancsa` on Discord**. See [commercial options](docs/COMMERCIAL.md). Do not deploy the preview as your sole security control.
+For a scoped integration pilot, OEM redistribution rights, deployment qualification or maintenance, contact **`titancsa` on Discord**. See [commercial options](docs/COMMERCIAL.md). Qualify the component for your deployment; it is not a complete endpoint security control.
 
 ## Responsible use
 
