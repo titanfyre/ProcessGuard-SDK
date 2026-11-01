@@ -2,6 +2,17 @@
 
 Observe and deny selected executable launches initiated by your own native application, with a two-file C++ SDK and a readable decision log.
 
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Full version and commercial licensing**
+>
+> **Discord username: `titancsa`**
+>
+> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **ProcessGuard SDK** and ask about the **full / production version, commercial use or OEM redistribution**.
+>
+> Include your intended use and deployment size to discuss pricing, availability and the appropriate licensing / access instructions.
+<!-- full-version-contact:end -->
+
 **Microsoft-signed evaluation bundle:** application, two-file SDK, example and self-contained UI/console installers. The kernel implementation stays private. See [validation](docs/VALIDATION.md) for the exercised platforms and remaining production qualification.
 
 ![ProcessGuard SDK interface, explicitly synthetic preview](docs/app.png)
