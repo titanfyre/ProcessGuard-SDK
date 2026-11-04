@@ -13,7 +13,7 @@ Observe and deny selected executable launches initiated by your own native appli
 > Include your intended use and deployment size to discuss pricing, availability and the appropriate licensing / access instructions.
 <!-- full-version-contact:end -->
 
-**Microsoft-signed evaluation bundle:** application, two-file SDK, example and self-contained UI/console installers. The kernel implementation stays private. See [validation](docs/VALIDATION.md) for the exercised platforms and remaining production qualification.
+**Microsoft-signed evaluation bundle:** application, two-file SDK, example and self-contained UI/console installers. Evaluation driver source is documented in [driver/README.md](driver/README.md); full/commercial implementation is excluded. See [validation](docs/VALIDATION.md) for the exercised platforms and remaining production qualification.
 
 ![ProcessGuard SDK interface, explicitly synthetic preview](docs/app.png)
 
@@ -71,20 +71,26 @@ Events include sequence, QPC time, process ID/start key, policy generation, oper
 
 ## Build
 
+Demo/evaluation driver source is available; see [driver/README.md](driver/README.md) for
+build instructions and separate evaluation-source terms. Those terms apply to
+Titan-authored driver code. Third-party source licenses and existing application/SDK
+licenses remain applicable. Full/commercial implementation and private signing or
+activation material are excluded.
+
 Install Visual Studio 2022 C++ tools, CMake and a Windows SDK. Run `./Build.ps1` in PowerShell. It builds the native app, console, example, installer sources and offline tests with a static C++ runtime. `./Build.ps1 -Asan` adds user-mode AddressSanitizer checks. Offline checks do not load a driver. Installer source accepts an opaque signed package using `-DriverPackageDirectory`; unsigned or unrelated embedded packages are rejected at runtime.
 
 ```text
 App/        Native Windows UI and console
 SDK/        ProcessGuard.h + ProcessGuard.cpp
 Examples/   Small integration example
-Installer/  UI/console setup source; kernel implementation excluded
+Installer/  UI/console setup source; driver source documented separately in driver/README.md
 Tests/      Offline protocol validation
 docs/       Usage boundaries, validation and commercial integration
 ```
 
 ## Commercial integration
 
-Public application, SDK and installer source are MIT-licensed. The kernel implementation is private and is not covered by that source license. The download includes separate `BINARY-LICENSE.txt` evaluation terms. This evaluation build does not implement a trial timer, remote activation or an enforceable licensing quota.
+Public application, SDK and installer source are MIT-licensed. The evaluation driver source has the separate license scope documented in [driver/README.md](driver/README.md); the user-mode source license does not automatically apply to it. The download includes separate `BINARY-LICENSE.txt` evaluation terms. This evaluation build does not implement a trial timer, remote activation or an enforceable licensing quota.
 
 For a scoped integration pilot, OEM redistribution rights, deployment qualification or maintenance, contact **`titancsa` on Discord**. See [commercial options](docs/COMMERCIAL.md). Qualify the component for your deployment; it is not a complete endpoint security control.
 
