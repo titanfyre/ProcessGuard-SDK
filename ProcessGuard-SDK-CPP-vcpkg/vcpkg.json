@@ -1,0 +1,17 @@
+{
+  "name": "processguard-sdk-sdk",
+  "version-string": "0.1.2",
+  "description": "Public native SDK for ProcessGuard-SDK; Windows x64, no driver installer.",
+  "license": "MIT",
+  "supports": "windows & x64 & !uwp",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}
