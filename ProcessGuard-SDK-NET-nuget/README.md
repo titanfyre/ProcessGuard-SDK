@@ -1,8 +1,6 @@
 # ProcessGuard-SDK .NET8 SDK
 
-Package ID `ProcessGuardSDK.SDK`. NuGet upload remains on hold at owner request.
-
-```csharp
+Package ID `ProcessGuardSDK.SDK`. ```csharp
 using var client=new TitanCSA.Products.ProcessGuardSDK.Client();
 string statusJson=client.Call("status", "{}");
 ```
