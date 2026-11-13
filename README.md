@@ -103,24 +103,24 @@ Use this software only on systems you own or are authorized to administer. It is
 
 Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK dedie](https://github.com/TitanCSA/sdk-packages/tree/main/projects/ProcessGuard-SDK). Choisis le paquet a installer puis execute sa commande dans son dossier.
 
-| Paquet | Registre | Disponibilite | Installation / utilisation |
-| --- | --- | --- | --- |
-| `processguard-sdk` | vcpkg | Registre TitanCSA disponible (configuration ci-dessous) | `vcpkg install processguard-sdk:x64-windows` |
-| `processguard-sdk` | Conan | Registre TitanCSA disponible (configuration ci-dessous) | `conan install --requires=processguard-sdk/0.1.2 -r titancsa --build=missing -s compiler.cppstd=17` |
-| `ProcessGuard-SDK.Native` | NuGet | Publie et verifie | `Install-Package ProcessGuard-SDK.Native -Version 0.1.2` |
-| `ProcessGuardSDK.SDK` | NuGet | Publie et verifie | `dotnet add package ProcessGuardSDK.SDK --version 1.0.0` |
-| `processguard_sdk` | PyPI | Pas encore disponible / validation en cours | Commande prevue apres publication : `python -m pip install processguard-sdk==1.0.0` |
-| `processguard-sdk` | Conda | Canal TitanCSA disponible ; acceptation conda-forge encore en attente | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge processguard-sdk` |
-| `processguard_sdk` | crates.io | Publie et verifie | `cargo add processguard-sdk@1.0.0` |
-| `processguard_sdk` | npm | Pas encore disponible / validation en cours | Commande prevue apres publication : `npm install processguard-sdk@1.0.0` |
-| `io.github.titancsa:processguard-sdk` | Maven Central | Publie et verifie | `io.github.titancsa:processguard-sdk:1.0.0 (pom.xml / Gradle)` |
-| `com.github.titanfyre:ProcessGuard-SDK` | JitPack | Publie et verifie | `com.github.titanfyre:ProcessGuard-SDK:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| `github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules` | Go Modules | Publie et verifie | `go get github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules@v1.0.0` |
-| `github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules` | pkg.go.dev | Publie et verifie | `Documentation : https://pkg.go.dev/github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules@v1.0.0` |
-| `processguard_sdk` | PowerShell Gallery | Publie et verifie | `Install-Module ProcessGuardSDK -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| `processguard_sdk` | pub.dev | Pas encore disponible / validation en cours | Commande prevue apres publication : `dart pub add processguard_sdk:1.0.0` |
-| `processguard_sdk` | RubyGems | Publie et verifie | `gem install processguard-sdk -v 1.0.0` |
-| `processguard_sdk` | Packagist | Pas encore disponible / validation en cours | Commande prevue apres publication : `composer require titancsa/processguard-sdk:1.0.0` |
+| Registre | Paquet | Installation / utilisation |
+| --- | --- | --- |
+| vcpkg | `processguard-sdk` | `vcpkg install processguard-sdk:x64-windows` |
+| Conan | `processguard-sdk` | `conan install --requires=processguard-sdk/0.1.2 -r titancsa --build=missing -s compiler.cppstd=17` |
+| NuGet | `ProcessGuard-SDK.Native` | `Install-Package ProcessGuard-SDK.Native -Version 0.1.2` |
+| NuGet | `ProcessGuardSDK.SDK` | `dotnet add package ProcessGuardSDK.SDK --version 1.0.0` |
+| PyPI | `processguard_sdk` | Commande prevue apres publication : `python -m pip install processguard-sdk==1.0.0` |
+| Conda | `processguard-sdk` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge processguard-sdk` (canal TitanCSA) |
+| crates.io | `processguard_sdk` | `cargo add processguard-sdk@1.0.0` |
+| npm | `processguard_sdk` | Commande prevue apres publication : `npm install processguard-sdk@1.0.0` |
+| Maven Central | `io.github.titancsa:processguard-sdk` | `io.github.titancsa:processguard-sdk:1.0.0 (pom.xml / Gradle)` |
+| JitPack | `com.github.titanfyre:ProcessGuard-SDK` | `com.github.titanfyre:ProcessGuard-SDK:java-sdk-v1.0.0 (avec le depot JitPack)` |
+| Go Modules | `github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules` | `go get github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules@v1.0.0` |
+| pkg.go.dev | `github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules@v1.0.0` |
+| PowerShell Gallery | `processguard_sdk` | `Install-Module ProcessGuardSDK -RequiredVersion 1.0.0 -Scope CurrentUser` |
+| pub.dev | `processguard_sdk` | Commande prevue apres publication : `dart pub add processguard_sdk:1.0.0` |
+| RubyGems | `processguard_sdk` | `gem install processguard-sdk -v 1.0.0` |
+| Packagist | `processguard_sdk` | Commande prevue apres publication : `composer require titancsa/processguard-sdk:1.0.0` |
 
 Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/ProcessGuard-SDK/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
 
