@@ -239,13 +239,13 @@
       "api_prefix": "processguard_sdk_json_"
     },
     "Dart/pub-dev": {
-      "status": "built_fixture_and_production_verified",
+      "status": "submitted_requires_public_verification",
       "name": "processguard_sdk",
       "version": "1.0.0",
       "directory": "ProcessGuard-SDK-Dart-pub-dev",
       "registry_published": false,
       "documentation_bundled": true,
-      "url": null,
+      "url": "https://pub.dev/packages/processguard_sdk",
       "public_consumer_verified": false,
       "module": "processguard_sdk",
       "dll_name": "ProcessGuardSDKJsonSDK.dll",
