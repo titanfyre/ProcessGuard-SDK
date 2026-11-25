@@ -1,5 +1,16 @@
 # ProcessGuard SDK - Windows Kernel Process Launch Policy Driver
 
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Full version and commercial licensing**
+>
+> **Discord username: `titancsa`**
+>
+> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **ProcessGuard SDK** and ask about the **full / production version, commercial use or OEM redistribution**.
+>
+> Include your intended use and deployment size to discuss pricing, availability and the appropriate licensing / access instructions.
+<!-- full-version-contact:end -->
+
 Observe and deny selected executable launches initiated by your own native application, with a two-file C++ SDK and a readable decision log.
 
 **Microsoft-signed evaluation bundle:** application, two-file SDK, example and self-contained UI/console installers. Evaluation driver source is documented in [driver/README.md](driver/README.md); full/commercial implementation is excluded. See [validation](docs/VALIDATION.md) for the exercised platforms and remaining production qualification.
@@ -118,13 +129,4 @@ Les anciens imports Go et versions JitPack gardent leurs tags. Pour les ancienne
 
 ## Commercial integration and support
 
-<!-- full-version-contact:start -->
-> [!IMPORTANT]
-> **Full version and commercial licensing**
->
-> **Discord username: `titancsa`**
->
-> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **ProcessGuard SDK** and ask about the **full / production version, commercial use or OEM redistribution**.
->
-> Include your intended use and deployment size to discuss pricing, availability and the appropriate licensing / access instructions.
-<!-- full-version-contact:end -->
+
