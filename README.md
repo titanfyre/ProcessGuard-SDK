@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 Let your app watch or control the programs it starts.
 
-**Start here.** Read the integration guide and try the example with a program you own.
+[First steps](#first-steps) · [Develop](#sdk-and-packages) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Read the integration guide and try the example with a program you own.
 <!-- simple-start:end -->
 
 <!-- full-version-contact:start -->
@@ -105,32 +109,11 @@ For a scoped integration pilot, OEM redistribution rights, deployment qualificat
 Use this software only on systems you own or are authorized to administer. It is intended for legitimate integration, diagnostics and application policy development. You remain responsible for your deployment and compliance with applicable law. The software is provided without warranty under its applicable license; no guarantee of loss prevention, immunity to bypass or liability exclusion beyond applicable law is made.
 
 <!-- central-sdk-packages:start -->
-## Paquets et installation
+<a name="paquets-et-installation"></a>
 
-Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK dedie](https://github.com/TitanCSA/sdk-packages/tree/main/projects/ProcessGuard-SDK). Choisis le paquet a installer puis execute sa commande dans son dossier.
+## SDK and packages
 
-| Registre | Paquet | Installation / utilisation |
-| --- | --- | --- |
-| vcpkg | `processguard-sdk` | `vcpkg install processguard-sdk:x64-windows` |
-| Conan | `processguard-sdk` | `conan install --requires=processguard-sdk/0.1.2 -r titancsa --build=missing -s compiler.cppstd=17` |
-| NuGet | `ProcessGuard-SDK.Native` | `Install-Package ProcessGuard-SDK.Native -Version 0.1.2` |
-| NuGet | `ProcessGuardSDK.SDK` | `dotnet add package ProcessGuardSDK.SDK --version 1.0.0` |
-| PyPI | `processguard-sdk` | Commande prevue apres publication : `python -m pip install processguard-sdk==1.0.0` |
-| Conda | `processguard-sdk` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge processguard-sdk` (canal TitanCSA) |
-| crates.io | `processguard-sdk` | `cargo add processguard-sdk@1.0.0` |
-| npm | `processguard-sdk` | Commande prevue apres publication : `npm install processguard-sdk@1.0.0` |
-| Maven Central | `io.github.titancsa:processguard-sdk` | `io.github.titancsa:processguard-sdk:1.0.0 (pom.xml / Gradle)` |
-| JitPack | `com.github.titanfyre:ProcessGuard-SDK` | `com.github.titanfyre:ProcessGuard-SDK:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| Go Modules | `github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules` | `go get github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules@v1.0.0` |
-| pkg.go.dev | `github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/ProcessGuard-SDK/ProcessGuard-SDK-Go-modules@v1.0.0` |
-| PowerShell Gallery | `ProcessGuardSDK` | `Install-Module ProcessGuardSDK -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| pub.dev | `processguard_sdk` | Commande prevue apres publication : `dart pub add processguard_sdk:1.0.0` |
-| RubyGems | `processguard-sdk` | `gem install processguard-sdk -v 1.0.0` |
-| Packagist | `titancsa/processguard-sdk` | `composer require titancsa/processguard-sdk:1.0.0` |
-
-Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/ProcessGuard-SDK/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
-
-Les anciens imports Go et versions JitPack gardent leurs tags. Pour les anciennes archives SDK, utilise [les liens de remplacement](https://github.com/TitanCSA/sdk-packages/blob/main/release-assets/URL-MIGRATION.json).
+Choose a language in the [SDK and package guide](https://github.com/TitanCSA/sdk-packages/tree/main/projects/ProcessGuard-SDK#readme) for exact install commands and examples. If your example requires a driver or app, install it separately.
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
