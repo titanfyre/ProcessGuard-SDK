@@ -1,5 +1,11 @@
 # ProcessGuard SDK - Windows Kernel Process Launch Policy Driver
 
+<!-- simple-start:start -->
+Let your app watch or control the programs it starts.
+
+**Start here.** Read the integration guide and try the example with a program you own.
+<!-- simple-start:end -->
+
 <!-- full-version-contact:start -->
 > [!IMPORTANT]
 > **Full version and commercial licensing**
@@ -128,5 +134,3 @@ Les anciens imports Go et versions JitPack gardent leurs tags. Pour les ancienne
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
-
-
